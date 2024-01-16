@@ -1,0 +1,15 @@
+
+<div class="container">
+  <h1 class="header">Authorization</h1>
+  <form class="window" [formGroup]="myForm">
+    <div class="form-group">
+      <div class="form-login">
+        <input type="text" name="login" placeholder="LOGIN" formControlName="login"/>
+      </div>
+      <div class="form-password">
+        <input type="password" name="password" placeholder="PASSWORD" formControlName="password"/>
+      </div>
+    </div>
+    <button class="button" (click)="authorization()">Вход</button>
+  </form>
+</div>
