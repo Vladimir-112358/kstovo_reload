@@ -7,7 +7,7 @@
         <input type="text" name="login" placeholder="LOGIN" formControlName="login"/>
       </div>
       <div class="form-password">
-        <input type="password" name="password" placeholder="PASSWORD" formControlName="password"/>
+        <input type="password" name="password" placeholder="PASSWORD" formControlName="password" (keydown.enter)="authorization()"/>
       </div>
     </div>
     <button class="button" (click)="authorization()">Вход</button>
